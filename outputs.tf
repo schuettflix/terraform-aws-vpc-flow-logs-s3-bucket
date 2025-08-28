@@ -1,23 +1,3 @@
-output "kms_key_arn" {
-  value       = module.kms_key.key_arn
-  description = "KMS Key ARN"
-}
-
-output "kms_key_id" {
-  value       = module.kms_key.key_id
-  description = "KMS Key ID"
-}
-
-output "kms_alias_arn" {
-  value       = module.kms_key.alias_arn
-  description = "KMS Alias ARN"
-}
-
-output "kms_alias_name" {
-  value       = module.kms_key.alias_name
-  description = "KMS Alias name"
-}
-
 output "bucket_domain_name" {
   value       = module.s3_log_storage_bucket.bucket_domain_name
   description = "FQDN of bucket"
